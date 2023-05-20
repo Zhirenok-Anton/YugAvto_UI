@@ -11,18 +11,18 @@ public interface WebConfig extends Config {
     @DefaultValue("CHROME")
     String getBrowser();
 
-    @Key("browserVersion")
+    @Key("browser_version")
     @DefaultValue("100.0")
     String getBrowserVersion();
 
-    @Key("browserSize")
+    @Key("browser_size")
     @DefaultValue("2500x1440")
     String getBrowserSize();
 
-    @Key("remoteUrl")
+    @Key("remote_url")
     String getRemoteUrl();
 
-    @Key("baseUrl")
+    @Key("base_url")
     @DefaultValue("https://yug-avto.ru")
     String getBaseUrl();
 }
