@@ -7,64 +7,14 @@ Chat id: -851314314
 ==================================================================
 РАБОЧИЕ КОМАНДЫ
 ==================================================================
+Получить сообщения из чата
 curl https://api.telegram.org/bot5845993585:AAE4FCYc6HeHVqDXzKawffYWn1y4g4sHzM8/getUpdates
-----------
-java "-DconfigFile=src\test\java\notifications\config.json" -jar src\test\java\notifications\allure-notifications-4.2.1.jar
-----------
 
-
-Fetch bot updates and look for the chat id:
-curl https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/getUpdates | jq .message.chat.id
-curl https://api.telegram.org/bot5845993585:AAE4FCYc6HeHVqDXzKawffYWn1y4g4sHzM8/getUpdates
----------------------------------------------------------------------------------------------
-Send a message using the HTTP API:
-curl -X POST  -H 'Content-Type: application/json' -d '{"chat_id": "123456789", "text": "This is a test from curl", "disable_notification": true}' https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage
-curl -X POST  -H 'Content-Type: application/json' -d '{"chat_id": "-1001521018110", "text": "This is a test from qa.guru", "disable_notification": true}' https://api.telegram.org/bot6067650461:AAEPRULG0pxRHSoJTer56MIouBttU3hQhM8/sendMessage
-
-Run jar with notifications
-java "-DconfigFile=notifications/config.json" -jar notifications/allure-notifications-4.2.1.jar
-
-
-https://api.telegram.org/bot5845993585:AAE4FCYc6HeHVqDXzKawffYWn1y4g4sHzM8/getUpdates
-5845993585:AAE4FCYc6HeHVqDXzKawffYWn1y4g4sHzM8
-
-https://api.telegram.org/bot5845993585:AAE4FCYc6HeHVqDXzKawffYWn1y4g4sHzM8/getUpdates
-
--851314314
-
-
-curl https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/getUpdates | jq .message.chat.id
-
-curl -X POST  -H 'Content-Type: application/json' -d '{"chat_id": "-851314314", "text": "This is a test from curl", "disable_notification": true}' https://api.telegram.org/5845993585:AAE4FCYc6HeHVqDXzKawffYWn1y4g4sHzM8/sendMessage
-
-C:\Users\comp\IdeaProjects\YugAvto_UI\src\test\java\notifications\allure-notifications-4.2.1.jar
-
-java "-D C:\Users\comp\IdeaProjects\YugAvto_UI\src\test\java\notifications\config.json" -jar C:\Users\comp\IdeaProjects\YugAvto_UI\src\test\java\notifications\allure-notifications-4.2.1.jar
+Отправить уведомление в телеграмм
+java "-DconfigFile=src/test/java/notifications/config.json" -jar src/test/java/notifications/allure-notifications-4.2.1.jar
 
 
 
-curl -X POST -H 'Content-Type: application/json' -d '{"chat_id": "-851314314", "text": "This is a test from curl", "disable_notification": "true"}' https://api.telegram.org/bot5845993585:AAE4FCYc6HeHVqDXzKawffYWn1y4g4sHzM8/sendMessage
-
-
-curl -X POST -H "Content-Type: application/json" -d '{ "chat_id": "-851314314", "text": "This is a test from curl", "disable_notification": true }' https://api.telegram.org/bot5845993585:AAE4FCYc6HeHVqDXzKawffYWn1y4g4sHzM8/sendMessage
-
-=====================================================================
-java "-DconfigFile=notifications/config.json" -jar notifications/allure-notifications-4.2.1.jar
-java "-DconfigFile=notifications\config.json" -jar notifications\allure-notifications-4.2.1.jar
-java "-DconfigFile=C:\Users\comp\IdeaProjects\YugAvto_UI\src\test\java\notifications\config.json" -jar C:\Users\comp\IdeaProjects\YugAvto_UI\src\test\java\notifications\allure-notifications-4.2.1.jar
-java "-DconfigFile=notifications\config.json" -jar YugAvto_UI\src\test\java\notifications\allure-notifications-4.2.1.jar
-java "-DconfigFile=notifications\config.json" -jar Users\comp\IdeaProjects\YugAvto_UI\src\test\java\notifications\allure-notifications-4.2.1.jar
-java "-DconfigFile=notifications\config.json" -jar notifications\allure-notifications-4.2.1.jar
-java "-DconfigFile=notifications\config.json" -jar notifications\allure-notifications-4.2.1.jar
-java "-DconfigFile=notifications\config.json" -jar notifications\allure-notifications-4.2.1.jar
-java "-DconfigFile=src\test\java\notifications\config.json" -jar src\test\java\notifications\allure-notifications-4.2.1.jar
-
-
-C:\Users\comp\IdeaProjects\YugAvto_UI\src\test\java\notifications\allure-notifications-4.2.1.jar
-C:\Users\comp\IdeaProjects\YugAvto_UI\src\test\java\notifications\config.json
-
-C:/Users/comp/IdeaProjects/YugAvto_UI/src/test/java/notifications/allure-notifications-4.2.1.jar
-C:/Users/comp/IdeaProjects/YugAvto_UI/src/test/java/notifications/config.json
 
 
 
