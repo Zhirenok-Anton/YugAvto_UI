@@ -1,0 +1,54 @@
+plugins {
+    id 'java-library'
+    id('io.qameta.allure') version '2.11.2'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+allure {
+    report {
+        version.set("2.21.0")
+    }
+    adapter {
+        aspectjWeaver.set(true)
+        frameworks {
+            junit5 {
+                adapterVersion.set("2.21.0")
+            }
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation (
+            "com.codeborne:selenide:6.12.3",
+            "org.junit.jupiter:junit-jupiter:5.9.2",
+            "com.github.javafaker:javafaker:1.0.2",
+            'com.opencsv:opencsv:5.7.1',
+            'com.codeborne:pdf-test:1.8.1',
+            'com.codeborne:xls-test:1.4.3',
+            'com.google.code.gson:gson:2.10.1',
+            'com.fasterxml.jackson.core:jackson-core:2.15.0-rc2',
+            'com.fasterxml.jackson.core:jackson-databind:2.15.0-rc2',
+            'io.qameta.allure:allure-selenide:2.21.0'
+    )
+}
+
+compileTestJava {
+    options.encoding = 'UTF-8'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+task telegramm_test(type: Test){
+    useJUnitPlatform{
+        includeTags("avto")
+    }
+}
