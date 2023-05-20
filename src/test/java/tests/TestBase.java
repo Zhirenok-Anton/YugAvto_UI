@@ -37,7 +37,7 @@ public class TestBase {
     public static void beforeAll() {
         SelenideLogger.addListener("allure", new AllureSelenide());
 
-        Configuration.remote = "https://user1:1234@" + System.getProperty("remote_url", "selenoid.autotests.cloud/wd/hub");
+        Configuration.remote = "https://user1:1234@" + System.getProperty("selenoid_url", "selenoid.autotests.cloud/wd/hub");
 
 
         Configuration.baseUrl = System.getProperty("base_url", "https://yug-avto.ru" );
