@@ -1,4 +1,4 @@
-package config;
+/*package config;
 
 import org.aeonbits.owner.Config;
 
@@ -25,4 +25,4 @@ public interface WebConfig extends Config {
     @Key("base_url")
     @DefaultValue("https://yug-avto.ru")
     String getBaseUrl();
-}
+}*/
