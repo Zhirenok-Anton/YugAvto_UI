@@ -45,7 +45,6 @@ test {
 
 
 task tests(type: Test){
-    systemProperties(System.getProperties())
     useJUnitPlatform{
         includeTags("avto")
     }
