@@ -16,7 +16,7 @@ public class MainPage {
 
     @Step("Открыть страницу https://yug-avto.ru/")
     public MainPage openPage(){
-        open("https://yug-avto.ru");
+        open("/");
         return this;
     }
 

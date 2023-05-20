@@ -29,12 +29,7 @@ dependencies {
             "com.codeborne:selenide:6.12.3",
             "org.junit.jupiter:junit-jupiter:5.9.2",
             "com.github.javafaker:javafaker:1.0.2",
-            'com.opencsv:opencsv:5.7.1',
-            'com.codeborne:pdf-test:1.8.1',
-            'com.codeborne:xls-test:1.4.3',
-            'com.google.code.gson:gson:2.10.1',
-            'com.fasterxml.jackson.core:jackson-core:2.15.0-rc2',
-            'com.fasterxml.jackson.core:jackson-databind:2.15.0-rc2',
+            "org.aeonbits.owner:owner:1.0.4",
             'io.qameta.allure:allure-selenide:2.21.0'
     )
 }
@@ -47,7 +42,8 @@ test {
     useJUnitPlatform()
 }
 
-task telegramm_test(type: Test){
+task tests(type: Test){
+    systemProperties(System.getProperties())
     useJUnitPlatform{
         includeTags("avto")
     }

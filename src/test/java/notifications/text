@@ -1,12 +1,10 @@
-
 Telegram username: @lesson_QA_guru_bot
 Telegram token: 5845993585:AAE4FCYc6HeHVqDXzKawffYWn1y4g4sHzM8
 Chat id: -851314314
 
-
-==================================================================
-РАБОЧИЕ КОМАНДЫ
-==================================================================
+=======================
+РАБОЧИЕ КОМАНДЫ       |
+=======================
 Получить сообщения из чата
 curl https://api.telegram.org/bot5845993585:AAE4FCYc6HeHVqDXzKawffYWn1y4g4sHzM8/getUpdates
 
