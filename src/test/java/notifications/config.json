@@ -3,7 +3,7 @@
     "logo": "",
     "project": "lessons qa guru",
     "environment": "qa.guru",
-    "comment": "LOCAL",
+    "comment": "comment",
     "reportLink": "reportLink",
     "language": "en",
     "allureFolder": "build/reports/allure-report/allureReport",
